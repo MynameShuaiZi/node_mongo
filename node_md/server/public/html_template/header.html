@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>页头</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/model.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+	<div class="main" id="header-top">
+
+		<div class="header-top clear">
+			<!---------------1.LOGO ----------------->
+			<div class="logo">
+				<a href="/"><img src="img/logo.png" alt=""></a>
+			</div>
+	<!--登陆注册-->
+		<div class="welcome">
+			<span>欢迎车主:</span>
+			<span class="uname"></span>
+			<span class="border">|</span>
+			<a href="#" class="logout">注销</a>
+		</div>
+		<div class="login-register">
+			<div class="login">登录</div>
+			<div class="register">注册</div>
+		</div>
+
+			<!-- 模态框（Modal） -->
+		<div class="model-box modal-display">
+					<div class="modal-content loginShow" data-modal="login">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal"
+									aria-hidden="true">×
+							</button>
+							<h4 class="modal-title" id="myModalLabel">
+								登录乘龙会员
+							</h4>
+						</div>
+						<div class="modal-body">
+							<div class="modal_dialog_login">
+								<p class="login-vali-p">
+									<span class="login-vali-tips"></span>
+								</p>
+								<form class="login_form login-form">
+									<p class="login_p">
+										<span>用户名:</span>
+									</p>
+									<p>
+										<input type="text" name="userName" class="login-userName" placeholder="用户名/手机/邮箱" autofocus>
+									</p>
+									<p class="login_p login_p1">
+										<span>密&nbsp;&nbsp;码:</span>
+									</p>
+									<p>
+										<input type="password" name="userPassword" class="login-userPassword" placeholder="请输入密码">
+									</p>
+									<p class="btnLogin">
+										<span class="submit_login">登录</span>
+									</p>
+									<p class="registerTips">
+										<span class="change_to_register">立即注册</span>
+									</p>
+									<p class="other-login">其他方式登录：<span><img src="img/weibo.png" alt=""><img src="img/weixin.png" alt=""><img
+											src="img/QQ.png" alt=""></span></p>
+								</form>
+							</div>
+						</div>
+					</div><!-- /.modal-content -->
+					<div class="modal-content modal-display modal-position" data-modal="register">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal"
+									aria-hidden="true">×
+							</button>
+							<h4 class="modal-title" id="myModalLabe">
+								注册乘龙会员
+							</h4>
+						</div>
+						<div class="modal-body">
+							<div class="modal_dialog_login">
+		<p class="register-vali-p">
+									<span class="register-vali-tips"></span>
+		</p>
+								<form class="login_form">
+									<p class="login_p login_p0">
+										<span>用户名:</span>
+									</p>
+									<p>
+										<input type="text" name="userName" class="register-userName" placeholder="6~10位字母或数字">
+									</p>
+									<p class="login_p login_p2">
+										<span>密&nbsp;&nbsp;码:</span>
+									</p>
+									<p>
+										<input type="password" name="userPassword" class="register-userPassword" placeholder="6~8位字母或数字">
+									</p>
+									<p class="login_p login_p3">
+										<span>确认密码:</span>
+									</p>
+									<p>
+										<input type="password" class="register-userPassword-repeat" placeholder="请重复输入密码">
+									</p>
+									<p class="btnRegister">
+										<span>注册</span>
+									</p>
+									<p>
+										<span class="change_to_login">已有账号,去登录</span>
+									</p>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div><!-- /.modal-dialog -->
+			</div><!-- /.modal -->
+			<!-- /.modal -->
+		</div>
+		</div>
+
+	<!---------- 2.下拉菜单 ---------->
+		<!------- 1.首页 ------------>
+		<div class="header-container">
+			<div class="list listContainer" ontouchstart="this.classList.toggle('hover');">
+				<a href="/" class="box box1">首页
+				</a>
+				<a href="/" class="box box2">首页
+				</a>
+			</div>
+		<!------- 2.车型展厅 ------------>
+			<div class="list listContainer" ontouchstart="this.classList.toggle('hover');">
+				<a href="/list?kw=" class="box box1">车型展厅</a>
+				<a href="/list?kw=" class="box box2">车型展厅</a>
+				<ul class="showCar">
+					<!--一楼-->
+					<li>
+					<ul class="navImage1">
+						<!--<li><a href="#">牵引车</a></li>-->
+					<!--<li>-->
+						<!--<a href="#">-->
+							<!--<span class="img_zc"></span>-->
+							<!--<span class="img_zd"></span>-->
+
+						<!--<h5><img src="img/icon_h5.png" alt=""/> H7牵引车</h5>-->
+						<!--<p><span>指导价：<strong>32.80万元</strong>起</span></p>-->
+						<!--</a>-->
+					<!--</li>-->
+						<!--<li>-->
+							<!--<a href="#">-->
+								<!--<span class="img_zc"></span>-->
+
+								<!--<h5><span>&gt; </span>H7牵引车</h5>-->
+								<!--<p><span>指导价：<strong>32.80万元</strong>起</span></p>-->
+							<!--</a>-->
+						<!--</li>-->
+						<!--<li>-->
+							<!--<a href="#">-->
+								<!--<span class="img_zc"></span>-->
+
+								<!--<h5><span>&gt; </span>H7牵引车</h5>-->
+								<!--<p><span>指导价：<strong>32.80万元</strong>起</span></p>-->
+							<!--</a>-->
+						<!--</li>-->
+						<!--<li>-->
+							<!--<a href="#">-->
+								<!--<span class="img_zc"></span>-->
+
+								<!--<h5><span>&gt; </span>H7牵引车</h5>-->
+								<!--<p><span>指导价：<strong>32.80万元</strong>起</span></p>-->
+							<!--</a>-->
+						<!--</li>-->
+					</ul>
+					</li>
+					<!--二楼-->
+					<li>
+						<ul class="navImage2">
+							<!--<li><a href="#">载货车</a></li>-->
+							<!--<li>-->
+								<!--<a href="#">-->
+									<!--<span class="img_zc"></span>-->
+
+									<!--<h5><span>&gt; </span>H7牵引车</h5>-->
+									<!--<p><span>指导价：<strong>32.80万元</strong>起</span></p>-->
+								<!--</a>-->
+							<!--</li>-->
+							<!--<li>-->
+								<!--<a href="#">-->
+									<!--<span class="img_zc"></span>-->
+
+									<!--<h5><span>&gt; </span>H7牵引车</h5>-->
+									<!--<p><span>指导价：<strong>32.80万元</strong>起</span></p>-->
+								<!--</a>-->
+							<!--</li>-->
+							<!--<li>-->
+								<!--<a href="#">-->
+									<!--<span class="img_zc"></span>-->
+
+									<!--<h5><span>&gt; </span>H7牵引车</h5>-->
+									<!--<p><span>指导价：<strong>32.80万元</strong>起</span></p>-->
+								<!--</a>-->
+							<!--</li>-->
+							<!--<li>-->
+								<!--<a href="#">-->
+									<!--<span class="img_zc"></span>-->
+
+									<!--<h5><span>&gt; </span>H7牵引车</h5>-->
+									<!--<p><span>指导价：<strong>32.80万元</strong>起</span></p>-->
+								<!--</a>-->
+							<!--</li>-->
+						</ul>
+					</li>
+					<!--三楼-->
+					<li>
+						<ul class="navImage3">
+							<!--<li><a href="#">工程车</a></li>-->
+							<!--<li>-->
+								<!--<a href="#">-->
+									<!--<span class="img_zc"></span>-->
+
+									<!--<h5><span>&gt; </span>H7牵引车</h5>-->
+									<!--<p><span>指导价：<strong>32.80万元</strong>起</span></p>-->
+								<!--</a>-->
+							<!--</li>-->
+							<!--<li>-->
+								<!--<a href="#">-->
+									<!--<span class="img_zc"></span>-->
+
+									<!--<h5><span>&gt; </span>H7牵引车</h5>-->
+									<!--<p><span>指导价：<strong>32.80万元</strong>起</span></p>-->
+								<!--</a>-->
+							<!--</li>-->
+							<!--<li>-->
+								<!--<a href="#">-->
+									<!--<span class="img_zc"></span>-->
+
+									<!--<h5><span>&gt; </span>H7牵引车</h5>-->
+									<!--<p><span>指导价：<strong>32.80万元</strong>起</span></p>-->
+								<!--</a>-->
+							<!--</li>-->
+							<!--<li>-->
+								<!--<a href="#">-->
+									<!--<span class="img_zc"></span>-->
+
+									<!--<h5><span>&gt; </span>H7牵引车</h5>-->
+									<!--<p><span>指导价：<strong>32.80万元</strong>起</span></p>-->
+								<!--</a>-->
+							<!--</li>-->
+						</ul>
+					</li>
+					<!--四楼-->
+					<li>
+						<ul class="navImage4">
+							<!--<li><a href="#">专用车</a></li>-->
+							<!--<li>-->
+								<!--<a href="#">-->
+									<!--<span class="img_zc"></span>-->
+
+									<!--<h5><span>&gt; </span>H7牵引车</h5>-->
+									<!--<p><span>指导价：<strong>32.80万元</strong>起</span></p>-->
+								<!--</a>-->
+							<!--</li>-->
+						</ul>
+					</li>
+				</ul>
+			</div>
+		<!------- 3.购车支持 ------------>
+			<div class="list listContainer" ontouchstart="this.classList.toggle('hover');">
+				<a href="/testDrive" class="box box1">购车支持</a>
+				<a href="/testDrive" class="box box2">购车支持</a>
+				<ul class="list-ul">
+					<li><a href="/testDrive">预约试驾</a></li>
+					<li><a href="/testDrive">经销商查询</a></li>
+					<li><a href="/list?kw=">购车选择</a></li>
+					<li><a href="/testDrive">型录下载</a></li>
+					<li>促销活动</li>
+				</ul>
+			</div>
+		<!------- 4.行业客户 ------------>
+			<div class="list listContainer" ontouchstart="this.classList.toggle('hover');">
+				<a href="/testDrive" class="box box1">行业客户</a>
+				<a href="/testDrive" class="box box2">行业客户</a>
+				<ul class="list-ul">
+					<li>零担快运解决方案</li>
+					<li>快递解决方案</li>
+					<li>危险品解决方案</li>
+					<li>轿运车解决方案</li>
+					<li>港口运输解决方案</li>
+					<li>渣土解决方案</li>
+				</ul>
+			</div>
+		<!------- 5.售后服务 ------------>
+			<div class="list listContainer" ontouchstart="this.classList.toggle('hover');">
+				<a href="/testDrive" class="box box1">售后服务</a>
+				<a href="/testDrive" class="box box2">售后服务</a>
+				<ul class="list-ul">
+					<li>服务承诺</li>
+					<li><a href="/testDrive">服务网点</a></li>
+					<li>服务活动</li>
+				</ul>
+			</div>
+			<!-------6.精品配件 ------------>
+			<div class="list listContainer" ontouchstart="this.classList.toggle('hover');">
+				<a href="#" class="box box1">精品配件</a>
+				<a href="#" class="box box2">精品配件</a>
+				<ul class="list-ul">
+					<li>配件公司</li>
+					<li>配件商查询</li>
+					<li>配件展示</li>
+					<li>配件查询</li>
+					<li>正品识别</li>
+					<li>配件购买渠道</li>
+					<li>配件活动</li>
+
+				</ul>
+			</div>
+			<!------- 7.新闻资讯 ------------>
+			<div class="list listContainer" ontouchstart="this.classList.toggle('hover');">
+				<a href="#" class="box box1">新闻资讯</a>
+				<a href="#" class="box box2">新闻资讯</a>
+				<ul class="list-ul">
+					<li>品牌新闻</li>
+					<li>媒体评测</li>
+				</ul>
+			</div>
+			<!------- 8.乘龙品牌 ------------>
+			<div class="list listContainer" ontouchstart="this.classList.toggle('hover');">
+				<a href="#" class="box box1">乘龙品牌</a>
+				<a href="#" class="box box2">乘龙品牌</a>
+				<ul class="list-ul">
+					<li>品牌介绍</li>
+					<li>生产研发</li>
+					<li>荣誉资质</li>
+					<li>合作伙伴招募</li>
+					<li>联系我们</li>
+				</ul>
+			</div>
+			<div class="search">
+
+				<input type="text" placeholder="牵引车" data-input="help">
+				<a href="">
+					<img src="img/2018-01-10_225111.png" alt=""></a>
+				<div class="searchTip btn-search">
+					搜索
+				</div>
+				<ul class="search-help">
+					<li>1</li>
+					<li>2</li>
+					<li>3</li>
+					<li>4</li>
+					<li>5</li>
+				</ul>
+		</div>
+	</div>
+	<!--<div class="dropDetail">-->
+		<!--<div>-->
+			<!--<h6>H7牵引车</h6>-->
+			<!--<p>指导价格 <span>32.80</span><span>万</span><span>元</span>起</p>-->
+		<!--</div>-->
+		<!--<div>-->
+		<!--<a href=""><img src="img/2018-01-14_204237.png" alt=""></a>-->
+		<!--<a href=""><img src="img/2018-01-14_204144.png" alt=""></a>-->
+		<!--<a href="">了解详情 > ></a>-->
+		<!--</div>-->
+		<!--<div></div>-->
+	<!--</div>-->
+	<script src="js/ajax.js"></script>
+	<script src="js/jquery-3.2.1.js"></script>
+	<script src="js/header.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script>
+		$(function() {
+			$('#myModal').modal({
+				keyboard: true
+			})
+		});
+	</script>
+</body>
+</html>

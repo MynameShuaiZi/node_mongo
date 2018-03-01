@@ -1,0 +1,156 @@
+#myModalLabel{
+    margin-bottom: 10px;
+    color: #333;
+    font-family: 微软雅黑;
+    font-size:30px;
+    font-weight:400;
+}
+.model-box{
+    position:absolute;
+    z-index:1000;
+    background:rgba(0,0,0,0.5);
+    width:1583px;
+    height:1583px;
+}
+.modal-content{
+    width:530px;
+    height:450px;
+    position:relative;
+    top:159px;
+    margin:0 auto;
+}
+.login_form{
+    font-size:16px;
+}
+.login_form input{
+    height:50px;
+    width:450px;
+    padding-left:73px;
+}
+.login_p{
+    position:relative;
+    top:40px;
+    left:11px;
+    width:60px;
+    height:38px;
+    line-height:38px ;
+    font-weight:bold;
+    z-index:1;
+}
+.login-userName{
+    position:absolute;
+    top:50px;
+}
+.login-userPassword{
+    position:absolute;
+    top:120px;
+}
+.modal_dialog_login{
+    margin-left:20px;
+}
+.login_p1{
+    position:relative;
+    top:73px;
+}
+.btnLogin{
+    width:450px;
+    height:50px;
+    font-size: 16px;
+    color: #fff;
+    border-radius: 4px;
+    overflow: hidden;
+    cursor: pointer;
+    background-color: #2299ed;
+    position:relative;
+    top:133px;
+    text-align: center;
+    line-height: 50px;
+}
+.registerTips{
+    width:68px;
+    height:22px;
+    float:right;
+    margin-right:25px;
+    cursor:pointer;
+    position:absolute;
+    top:183px;
+    right:17px;
+}
+.other-login{
+    position:absolute;
+    top:318px;
+    left:33px;
+}
+.other-login>span>img{
+    margin-right:5px;
+    cursor:pointer;
+}
+/************注册*/
+#myModalLabe
+{
+    margin-bottom: 10px;
+    color: #333;
+    font-family: 微软雅黑;
+    font-size:30px;
+    font-weight:400;
+}
+.login_form>.login_p0{
+    position:relative;
+    top:31px;
+}
+.login_form>.login_p2{
+    position:relative;
+    top:56px;
+}
+.login_form>.login_p3{
+    width:74px;
+    height:38px;
+    position:relative;
+    top:79px;
+    left:2px;
+}
+.register-userPassword-repeat{
+    position:absolute;
+    top:164px;
+}
+.login_form>.btnRegister{
+    position:relative;
+    top:137px;
+    width:450px;
+    height:50px;
+    font-size: 16px;
+    color: #fff;
+    border-radius: 4px;
+    overflow: hidden;
+    cursor: pointer;
+    background-color: #2299ed;
+    text-align: center;
+    line-height: 50px;
+}
+.change_to_login{
+    position:absolute;
+    top:220px;
+    right:45px;
+    cursor:pointer;
+}
+.modal-display{
+    display:none;
+}
+.modal-position{
+    position:relative;
+    top:159px;
+}
+.login-vali-p{
+    position:absolute;
+}
+.register-userName{
+    position:absolute;
+    top:40px;
+}
+.register-userPassword{
+    position:absolute;
+    top:102px;
+}
+.register-vali-p{
+    position:absolute;
+}

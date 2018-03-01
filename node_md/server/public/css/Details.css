@@ -1,0 +1,242 @@
+/*面包屑导航*/
+.car-details>.bread-crumb{
+    width: 100%;
+    height:60px;
+    line-height:60px;
+    font-size:20px;
+	margin-bottom:20px;
+    font-family: "微软雅黑", Arial;
+}
+.car-details>.bread-crumb>span,.car-details>.bread-crumb>a{
+    color:#666666;
+}
+/*放大镜效果*/
+.car-details .contains{
+    width:1583px;
+    display:flex;
+    justify-content: space-between;
+    position:relative;
+	margin:0 auto;
+}
+.car-details .preview{
+    width:800px;
+}
+.car-details .bigMirror{
+    width:800px;
+    height:450px;
+	text-align:center;
+    /* border:1px solid red; */
+}
+.car-details .bigMirror>.mImg{
+    width:800px;
+    height:450px;
+	vertical-align:middle;
+}
+.car-details .bigMirror>.mask{
+    width:175px;
+    height:175px;
+    background:#fff;
+    border:1px solid deepskyblue;
+    opacity:0.5;
+	position:absolute;
+	top:0; 
+	left:0;
+    display:none;
+}
+.car-details .bigMirror>.superMask{
+    width:800px;
+    height:450px;
+    opacity:0;
+    position:absolute;
+    top:0;
+    left:0;
+    cursor:move;
+}
+.car-details .largeDiv{
+    width:600px;
+    height:400px;
+    background:#fff;
+	/* border:1px solid red; */
+    position:absolute;
+    top:-14px;
+    left:805px;
+    z-index:999;
+	/* background-size:100px 100px; */
+    display:none;
+}
+.car-details h1{
+    width:800px;
+    height:100px;
+    margin-left:2px;
+    margin-top:20px;
+    margin-bottom:10px;
+	text-align:center;
+}
+.car-details h1>ul img{
+    width:150px;
+    height:105px;
+    transition:all .5s ease-out;
+}
+.car-details h1>ul img:hover{
+    transform:scale(1.05);
+}
+.car-details h1>ul>li{
+    float:left;
+    margin:3px 1px 10px 3px;
+    text-align:center;
+}
+/*.car-details h1>ul img:hover{*/
+    /*border:1px solid #B2B2B3;*/
+/*}*/
+
+
+
+/*商品详情*/
+.contains>.detail{
+    width:670px;
+    height:665px;
+}
+.contains .detailTitle>.title{
+    font-size:32px;
+    color:#121212;
+    margin-bottom:10px;
+    margin-top:5px;
+    font-family: 微软雅黑;
+}
+.contains .detailTitle>.code{
+    font-size:14px;
+    color:#121212;;
+    margin-top:10px;
+    font-family: 微软雅黑;
+}
+.contains .detailPrice{
+    width:600px;
+    height:220px;
+    margin-top:40px;
+    font-family: 微软雅黑;
+}
+.contains .detailPrice>.price{
+    font-size:50px;
+    font-weight:bold;
+    margin:20px 0 40px 0px;
+    padding-top:16px;
+    color:#0AA1ED;
+    font-family: 微软雅黑;
+}
+.contains .detailPrice>.service{
+    font-size:25px;
+    color: #121212;;
+    font-weight:bold;
+    font-family: 微软雅黑;
+}
+.detailPrice a{
+    font-size:18px;
+    margin-right:10px;
+    margin-left:90px;
+    color:#0AA1ED;
+}
+.contains .detailPrice>.serviceDetails{
+    margin:65px 0 20px 0px;
+    font-size:30px;
+    font-weight:bold;
+    padding-bottom:16px;
+}
+.serviceDetails>span{
+    margin-right:14px;
+    margin-left:5px;
+}
+.selectClass{
+    display: flex;
+    flex-wrap: wrap;
+}
+.selectClass>div{
+    width:250px;
+    height:40px;
+    border:1px solid #0085bf;
+    text-align:center;
+    line-height: 40px;
+    margin-top:10px;
+    margin-right:30px;
+}
+.selectClass>div>a{
+    display:inline-block;
+    color:#121212;
+    font-size:20px;
+    font-family: 微软雅黑;
+    width:250px;
+    height:40px;
+}
+#pp{
+    font-size:25px;
+    color:#121212;
+    margin-top:50px;
+    font-family: 微软雅黑;
+}
+.selectClass>div>a.hover{
+    background-color:#0085bf;
+    color:#fff;
+}
+.img-list>img{
+    width:1583px;
+}
+.order{
+    width:535px;
+    height:72px;
+    line-height: 72px;
+    background-color:#CC0000;
+    color:#fff;
+    font-size:30px;
+	margin-top:15px;
+}
+
+/*车型图片*/
+.imgContainer{
+    width:1204px;
+    margin:0 auto;
+}
+.imgContainer>.imgTitle{
+    width:962px;
+    height:95.5px;
+    margin:0 auto;
+    background-color:#3989C7;
+    color:#FFF;
+    font-family: 微软雅黑;
+    font-size:21px;
+    font-weight:700;
+    text-align: center;
+    line-height:95.5px;
+}
+.imgContainer>.imgList>li{
+    float:left;
+    width:25%;
+    overflow: hidden;
+    cursor:pointer;
+}
+.imgContainer>.imgList>li>img{
+    width:300px;
+    height:168.75px;
+    box-sizing: border-box;
+    transition:all 1s ease-out;
+
+}
+.imgContainer>.imgList>li:hover>img{
+    transform: scale(1.2);
+}
+.imgContainer>.imgList>.no1{
+    width:66.66%;
+}
+.imgContainer>.imgList>.no1>img{
+    width:799.91px;
+    height:449.94px;
+    box-sizing: border-box;
+}
+.imgContainer>.imgList>.no2{
+    width:33.33%
+}
+.imgContainer>.imgList>.no2>img{
+    width:399.95px;
+    height:224.97px;
+    box-sizing: border-box;
+}
+.imgContainer>.imgList img{
+}

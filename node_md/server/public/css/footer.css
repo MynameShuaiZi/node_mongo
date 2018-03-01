@@ -1,0 +1,130 @@
+div.main2{
+    background-color:#D7D8D9;
+}
+#footer{
+    width:1280px;
+    height:365px;
+    margin:0 auto;
+    position:relative;
+}
+#footer>div.footer-top{
+    display:flex;
+    justify-content: space-between;
+    width:1280px;
+    height:260px;
+}
+#footer>div>ul>li.footer-list1{
+    font-size:14px;
+}
+#footer>div>ul>li.footer-list1>a{
+    color:#404142;
+}
+#footer>div>ul>li.footer-list1>a:hover{
+    color:#3989C7;
+}
+#footer>div>ul>li>ul>li>a{
+    color:#797A7B;
+    font-size: 12px;
+}
+#footer>div>ul>li>ul>li>a:hover{
+    color:#3989C7;
+}
+#footer>div.footer-top>ul.footer-list{
+    width:998.41px;
+    height:189px;
+    margin-top:38px;
+    display:flex;
+    justify-content:space-around;
+}
+/*底部右端的分享*/
+#footer>div>div.share-right{
+    width:336.44px;
+    height:189px;
+    margin-top:38px;
+    position:relative;
+}
+#footer div.shareChat{
+    display:flex;
+    justify-content: space-between;
+    width:188px;
+    position: absolute;
+    right:20px;
+    top:-10px;
+}
+#footer div.shareChat>a{
+    width:62px;
+    height:28px;
+    background-color:#B2B2B3;
+
+}
+#footer div.shareChat>a:hover{
+    background-color:#5592C2;
+}
+#footer div.shareImg>img{
+    width:90.23px;
+    height:90.23px;
+    padding-right:0px;
+}
+#footer div.shareImg{
+    position:absolute;
+    right:20px;
+    top:37px;
+}
+#footer h2{
+    position:absolute;
+    bottom:30px;
+    width:188px;
+    height:21px;
+    text-align:center;
+    line-height:21px;
+    left:125px;
+    font-weight:lighter;
+    color:#666;
+}
+li.footer-list1>ul{
+    margin-top:20px;
+}
+#longline{
+    margin:0 auto;
+    position: absolute;
+    top:65px;
+    left:-156px;
+    border:1px solid #C1C2C3;
+    width:1583px;
+}
+/********************** 免责声明******************/
+.copy-top a,b,.copy-bottom a{
+    color:#888888;
+    font-size:14px;
+}
+.copy{
+    width:1583px;
+    position:absolute;
+    left:19px;
+    bottom:10px;
+
+}
+.copy-top{
+    width:1583px;
+    height:43px;
+    line-height: 43px;
+}
+.copy-bottom{
+    width:1200px;
+    height:43px;
+    line-height:43px;
+}
+.copy-top li,.copy-bottom li{
+    float:left;
+}
+.copy>a>img{
+    position:absolute;
+    left:1051px;
+    bottom:42px;
+    z-index:20;
+}
+.copy-middle{
+    color:#C1C2C3;
+    position:relative;
+    left:-171px;
+}

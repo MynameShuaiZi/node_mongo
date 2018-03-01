@@ -1,0 +1,128 @@
+/*<!--1.1:banner图片-->*/
+.driveBanner{
+    width:1583px;
+    height:332px;
+    background:url("../img/banner_testdrive.jpg") no-repeat;
+}
+/*1.2:购车选择*/
+.productChoice{
+    width:1583px;
+    height:140px;
+    line-height:140px;
+}
+.productChoice>span:first-child{
+    font-size:40px;
+    font-weight: lighter;
+    color: #000;
+    font-family: "微软雅黑", Arial;
+    letter-spacing:7px;
+}
+.productChoice>span:last-child{
+    float:right;
+    margin-right:230px;
+}
+.productChoice>span:last-child>a:nth-child(2){
+    font-size:14px;
+    color:#989898;
+    font-family: "微软雅黑", Arial;
+}
+.productChoice>span:last-child>a:last-child{
+    font-size:14px;
+    color:#000;
+    font-family:"微软雅黑", Arial;
+}
+.productChoice>span img{
+    vertical-align: baseline;
+}
+
+/*表单和地图*/
+.FormMap{
+    width:1583px;
+    height:490px;
+    background-color:#EFEFF1;
+    display:flex;
+    justify-content: space-between;
+}
+/*填写表单*/
+.driveForm{
+    width:654px;
+    height:490px;
+    margin-left:93px;
+}
+/*百度地图*/
+.driveImg{
+    width:791px;
+    height:490px;
+}
+.FormDrive{
+    width:590px;
+    height:471px;
+    margin:48px 0 0 59px;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.common{
+    width:284px;
+    height:36px;
+    font-size: 1.5em;
+    border: 2px solid #000;
+    background: #FFF;
+    text-align: left;
+    color: #000000;
+    font-family: 微软雅黑;
+    font-weight:bold;
+}
+#type>option{
+    padding: 0px 2px 1px;
+    font-weight: normal;
+}
+.common1{
+    width:120px;
+    height:36px;
+}
+.common2{
+    width:140px;
+    height:36px;
+}
+#btnSubmit{
+    width:284px;
+    background: #3989C7;
+    text-align: center;
+    font-size: 1em;
+    height: 40px;
+    line-height: 40px;
+    border: 0;
+    border-bottom: #023f6d solid 0.25em;
+    color: #FFF;
+    margin-top:20px;
+}
+.address{
+    background: #FFF;
+    border: 1px dashed #C9C9C9;
+    padding: 0.5em;
+    text-align: left;
+    width:284px;
+    height:120px;
+    font-family: 微软雅黑;
+    margin-top:-11px;
+    display: none;
+}
+.address>h3{
+    font-size:17.5px;
+    font-weight:bold;
+    color: #000;
+
+    line-height: 1.25em;
+}
+.address>p{
+    line-height: 1.25em;
+    padding: 0.25em 0;
+    font-size: 15px;
+}
+.tel{
+    color: #3989C7;
+    font-weight: bold;
+    font-size: 20px;
+    word-break: break-all;
+}

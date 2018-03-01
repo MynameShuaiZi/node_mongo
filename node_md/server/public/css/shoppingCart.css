@@ -1,0 +1,13 @@
+tbody td:first-child>img{
+	width:100px;
+	height:100px;
+	margin:0 auto;
+}
+table{
+	background-color:#D7D8D9;
+	margin:35px 0 35px 0;
+}
+#table-top{
+	width:1583px;
+	height:335px;
+}

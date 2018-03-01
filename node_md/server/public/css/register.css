@@ -1,0 +1,179 @@
+#bannerjpg{
+    width:1583px;
+}
+#container{
+    width:1283px;/*1182*/
+    height:600px;
+    position:relative;
+    border:1px solid #bcbec0; 
+    border-top:3px solid #414042;
+    margin:30px auto;
+    box-sizing: border-box; 
+}
+#container>div.container-login{
+    width:1180px;
+    height:560px;
+    margin:20px 0 20px 0;
+	position:relative;
+	left:-100px;
+}
+#container>div.container-register{
+    width:411px;
+    height:560px;
+    position:absolute;
+    top:34px;
+    right:0px;
+}
+#container>div.container-login>h3{
+    width:374px;
+    height:98px;
+    line-height: 98px;
+    text-align:center;
+    font-weight:400;
+    font-size:30px;
+    color:#414042;
+    padding:40px 40px 40px 216px;
+}
+#container>div.container-register>h3{
+    width:374px;
+    height:98px;
+    line-height: 105px;
+    text-align:center;
+    font-weight:400;
+    font-size:30px;
+    color:#414042;
+    padding:30px 0;
+}
+
+fieldset{
+    border:0;
+    width:980px;
+    height:210px;
+    box-sizing: border-box;
+    position: absolute;
+    right:0;
+}
+legend{
+    display:none;
+}
+form p>label{
+    display:inline-block;
+    width:60px;
+    height:30px;
+    padding:0 15px 0 0;
+    line-height:30px;
+    color:#7a7a7a;
+    font-size:18px;
+    margin:0 10px 20px 0;
+}
+form p>input{
+    width:302px;
+    height:30px;
+    outline: none;
+    padding-left:5px;
+}
+form div>label{
+    color:#7a7a7a;
+    font-size: 14px;
+}
+form div.chexkbox{
+    width:400px;
+    height:35px;
+    margin-top:16px;
+}
+form div.chexkbox a{
+    color:#2075a8;
+    line-height: 35px;
+    float:right;
+}
+hr{
+    width:400px;
+    position:absolute;
+}
+div.login-btn{
+    margin:50px 0 0 77px;
+}
+div.login-btn>input{
+    width:250px;
+    height:50px;
+    background:#414042;
+    font-size:20px;
+    text-align:center;
+    line-height:40px;
+    color:#e0d6c6;
+    cursor:pointer;
+}
+
+/*注册 页面*/
+div.container-register{
+	border-left:1px dashed gray;
+}
+div.register-btn{
+    margin:0 0 0 77px;
+}
+div.container-register>div.register-btn input{
+    width:250px;
+    height:50px;
+    background:#414042;
+    font-size:20px;
+    text-align:center;
+    line-height:40px;
+    color:#e0d6c6;
+    cursor:pointer;
+}
+div.register-pay input{
+    width:225px;
+    height:45px;
+    background:url(../img/2017-12-03_135044.png) center center no-repeat #eee;
+    line-height:40px;
+    cursor:pointer;
+}
+div.container-register>div:last-child{
+    margin:50px auto;
+    font-size:20px;
+    color:#414042;
+    text-align:center;
+}
+div.container-register>div:last-child>p{
+    margin-bottom:10px;
+}
+
+/* 自定义添加 */
+
+
+
+.vali_info{/* 页面初始，验证消息不显示 */
+	display:none;
+}
+.txt_focus{/*当文本框获得焦点时穿上*/
+	border-top:2px solid black;
+	border-left:2px solid black;
+}/*当文本框失去焦点时脱下*/
+
+.vali_success,.vali_fail{
+	background-repeat:no-repeat;
+  background-position:left center;
+	display:block;	
+}
+/* 验证消息：验证通过时的样式 */
+.vali_success{
+    background-image:url("../img/ok.png");
+	padding-left:20px;
+	width:0px;height:20px;
+	overflow:hidden;
+	position:relative;
+	left:410px;
+	top:-50px;
+}
+/* 验证消息：验证失败时的样式 */
+.vali_fail{
+    background-image:url("../img/err.png");
+    border:1px solid red;
+    background-color:#ddd;
+    color:Red;
+    padding-left:30px;
+	width:200px;
+	position:relative;
+	left:410px;
+	top:-50px;
+}

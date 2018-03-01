@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>使用Selector API实现购物车客户端计算</title>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="css/shoppingCart.css">
+<style>
+    table{text-align:center;
+        border-collapse:collapse;
+				width:1583px;
+				font-size:20px;
+    }
+    td,th{border:1px solid black}
+    td[colspan="4"]{text-align:right;}
+  tbody td:first-child+td{
+    width:600px;text-align:center;
+  }
+	thead th.th3,thead th:last-child{
+		width:100px;
+	}
+	tbody td:nth-child(4)>span{
+		display:inline-block;
+		width:20px;
+	}
+</style>
+
+</head>
+<body>
+	<div class="main clear main1" id="header">
+	</div>
+	<div class="main">
+		<img src="img/banner_dealerrecruit.jpg" alt="" id="table-top">
+    <table id="data">
+        <thead>
+            <tr>
+        <th><input type="checkbox"/>全选</th>
+                <th>商品名称</th>
+                <th>单价</th>
+                <th class="th3">数量</th>
+                <th>小计</th>
+								<th>操作</th>
+            </tr>
+        </thead>
+        <tbody>
+        <!-- <tr>
+                <td>${p.title}</td>
+                <td>¥${parseFloat(p.price).toFixed(2)}</td>
+        <td>
+          <button>-</button>
+          <span>${p.count}</span>
+          <button>+</button>
+          <input type="hidden" value="${p.iid}"/>
+        </td>
+                <td>¥${(p.price*p.count).toFixed(2)}</td>
+            </tr> -->
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4">Total: </td>
+                <td></td>
+								<td><button id="btnDelete">批量删除</button></td>
+            </tr>
+        </tfoot>
+    </table>
+	<div>
+  <script src="js/ajax.js"></script>
+  <script src="js/shoppingCart.js"></script>
+	<script src="js/header.js"></script>
+	<script src="js/footer.js"></script>
+	<div class="main main2" id="footer-1">
+	</div>
+</body>
+</html>

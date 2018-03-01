@@ -1,0 +1,191 @@
+/*<!--1.1:banner图片-->*/
+.productBanner{
+    height:409px;
+    background:url("../img/productList/banner_order.jpg") no-repeat;
+}
+
+/*1.2:购车选择*/
+.productChoice{
+    width:1583px;
+    height:140px;
+    line-height:140px;
+}
+.productChoice>span:first-child{
+    font-size:40px;
+    font-weight: lighter;
+    color: #000;
+    font-family: "微软雅黑", Arial;
+    letter-spacing:7px;
+}
+.productChoice>span:last-child{
+    float:right;
+    margin-right:230px;
+}
+.productChoice>span:last-child>a:nth-child(2){
+    font-size:14px;
+    color:#989898;
+    font-family: "微软雅黑", Arial;
+}
+.productChoice>span:last-child>a:last-child{
+    font-size:14px;
+    color:#000;
+    font-family:"微软雅黑", Arial;
+}
+.productChoice>span img{
+    vertical-align: baseline;
+}
+
+/*1.3：已经准备选择*/
+.productReady{
+    width:1583px;
+    height:50px;
+    background-color:#F6F6F6;
+    /*vertical-align: middle;*/
+}
+.productReady>.productReadyUl>li{
+    float:left;
+    height:30px;
+    line-height: 30px;
+    font-family: "微软雅黑", Arial;
+    font-size:16px;
+    border: 1px solid #A0A0A0;
+    padding: 0 1em;
+    margin-right: 30px;
+    vertical-align: middle;
+    margin-top:10px;
+    margin-left: 0.25em;
+    color: #3989C7;
+    display:none;
+}
+.productReady>.productReadyUl>li>a{
+    margin-left: 0.25em;
+    color: #3989C7;
+}
+.productReady>.productReadyUl>li>span:first-child{
+    color:#666666;
+}
+/*1.4：开始选择table*/
+.productType{
+    width:1583px;
+    height:260px;
+}
+.productType li{
+    width:1583px;
+    height:50px;
+    line-height: 50px;
+    border:1px solid #EBEBEB;
+    position:relative;
+}
+.productType li>span{
+    width:145px;
+    height:50px;
+    background-color:#EBEBEB;
+    position:absolute;
+    font-size:16px;
+    color:#101010;
+    font-family:"Microsoft YaHei";
+    text-align: center;
+    border-bottom:3px solid #FFFFFF;
+}
+.productType li>a{
+    position:relative;
+    left:167px;
+    color:#21558F;
+    display:inline-block;
+    line-height: 50px;
+    vertical-align: middle;
+    margin-right: 0.25em;
+    font-family: "微软雅黑", Arial;
+    font-size: 16px;
+    min-width: 6.5em;
+}
+/*1.5: 商品列表*/
+.productList{
+    width:1583px;
+    margin-top:60px;
+}
+.productList>h1{
+    font-family: "微软雅黑", Arial;
+}
+.productList h2{
+    font-family: "微软雅黑", Arial;
+    margin-top:40px;
+}
+/*.productList .tagFlex{*/
+    /*display:flex;*/
+    /*flex-wrap: wrap;*/
+    /*justify-content: space-between;*/
+/*}*/
+.productList .tagFlex>div{
+    width:350px;
+    height:280px;
+    margin-top:50px;
+    float:left;
+    margin-right:45px;
+    overflow: hidden;
+    border-right: 1px solid #CBCBCB;
+}
+
+.productList .tagFlex img{
+    width:350px;
+    height:196px;
+    transition:all .5s ease-out;
+}
+.productList .tagFlex img:hover{
+
+    transform: scale(1.1);
+}
+.productList .tagFlex p{
+    font-size: 16px;
+    font-family: "微软雅黑", Arial;
+    color:#000000;
+    margin-top:15px;
+}
+
+.productList .tagFlex p>span{
+    font-size:20px;
+    color:#0AA1ED;
+    font-weight:bold;
+}
+
+/*1.6:分页查询*/
+.page{
+    width: 1583px;
+    height: 40px;
+    background: #eAe9e9;
+    margin-top:25px;
+    margin-bottom:80px;
+
+}
+.page-container{
+    float: right;
+    margin-right: 5px;
+}
+.page-container>a{
+    display: inline-block;
+    margin-left: 10px;
+    border: 1px solid #BFBFBF;
+    border-radius: 3px;
+    background: #EFEFEF;
+    color: #0096D6;
+    width:70px;
+    height:39px;
+    line-height: 39px;
+    text-align: center;
+    font-size:16px;
+}
+a.disabled{
+    background: #F2F2F2;
+    color: #ccc;
+}
+a.current-page{
+    background: #0096D6;
+    color: #fff;
+    border:1px solid #0096D6;
+}
+.show-all>span>img{
+    display: none;
+}
+a.hide{
+    display:none;
+}

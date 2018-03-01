@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../public/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../public/css/model.css">
+</head>
+<body>
+<!-- 模态框（Modal） -->
+
+<!-- 按钮触发模态框 -->
+<button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+    开始演示模态框
+</button>
+<!-- 模态框（Modal） -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"
+                        aria-hidden="true">×
+                </button>
+                <h4 class="modal-title" id="myModalLabel">
+                    登录乘龙会员
+                </h4>
+            </div>
+            <div class="modal-body">
+                <div class="modal_dialog_login">
+                    <p>
+                        <span class="login-vali-tips"></span>
+                    </p>
+                    <form class="login_form">
+                        <p class="login_p">
+                            <span>用户名:</span>
+                        </p>
+                        <p>
+                            <input type="text" name="userName" class="login-userName" placeholder="用户名/手机/邮箱">
+                        </p>
+                        <p class="login_p login_p1">
+                            <span>密&nbsp;&nbsp;&nbsp;&nbsp;码:</span>
+                        </p>
+                        <p>
+                            <input type="password" name="userPassword" class="login-userPassword" placeholder="请输入密码">
+                        </p>
+                        <p class="btnLogin">
+                            <span class="submit_login">登录</span>
+                        </p>
+                        <p class="registerTips">
+                            <span class="change_to_register">立即注册</span>
+                        </p>
+                        <p class="other-login">其他方式登录：<span><img src="../public/img/weibo.png" alt=""><img src="../public/img/weixin.png" alt=""><img
+                                src="../public/img/QQ.png" alt=""></span></p>
+                    </form>
+                </div>
+            </div>
+        </div><!-- /.modal-content -->
+        <div class="modal-content modal-display modal-position">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"
+                        aria-hidden="true">×
+                </button>
+                <h4 class="modal-title" id="myModalLabe">
+                    注册乘龙会员
+                </h4>
+            </div>
+            <div class="modal-body">
+                <div class="modal_dialog_login">
+                    <form class="login_form">
+                        <p class="login_p login_p0">
+                            <span>用户名:</span><span class="userName_vali_tips"></span>
+                        </p>
+                        <p>
+                            <input type="text" name="userName" class="login-userName" placeholder="6~10位字母或数字">
+                        </p>
+                        <p class="login_p login_p2">
+                            <span>密&nbsp;&nbsp;&nbsp;&nbsp;码:</span><span class="userPassword_vali_tips"></span>
+                        </p>
+                        <p>
+                            <input type="password" name="userPassword" class="login-userPassword" placeholder="*6~8位字母或数字">
+                        </p>
+                        <p class="login_p login_p3">
+                            <span>重复密码:</span><span class="userPassword_repeat_vali_tips"></span>
+                        </p>
+                        <p>
+                            <input type="password" class="register-userPassword-repeat" placeholder="请重复输入密码">
+                        </p>
+                        <p>
+                            <span class="register_vali_tips"></span>
+                        </p>
+                        <p class="btnLogin btnregister">
+                            <span>注册</span>
+                        </p>
+                        <p>
+                            <span class="change_to_login">已有账号,去登录</span>
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+<!-- /.modal -->
+<script src="../public/js/jquery-3.2.1.js"></script>
+<script src="../public/js/bootstrap.min.js"></script>
+<script>
+    $(function() {
+        $('#myModal').modal({
+            keyboard: true
+        })
+    });
+</script>
+</body>
+</html>

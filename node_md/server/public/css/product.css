@@ -1,0 +1,64 @@
+div.main>img{
+	width:1583px;
+}
+/*车型展厅*/
+div.show-car{
+	width:1583px;
+	height:140px;
+	position:relative;
+}
+div.show-car>h1{
+	line-height:140px;
+	margin-left:300px;
+	font-size:2.5em;
+	font-weight: lighter;
+	color: #000;
+}
+div.show-car>a{
+	position:absolute;
+	top:59px;
+	right:244px;
+	color: #000;
+}
+div.show-car>a:hover{
+	color:#0168B7;
+	transition:all .5s linear;
+}
+/*车型导航栏*/
+
+div.nav{
+	width:1583px;
+	height:63px;
+	background-color:#000000;
+	position:relative;
+}
+div.box{
+	width:1555px;
+	height:63px;
+	background-color:#EBEBEB;
+	position:absolute;
+	left:15px;
+	top:-14px;
+}
+div.box>ul.tabs>li{
+	float:left;
+	line-height:63px;
+	text-align:center;
+	margin:0 30px;
+	width:320px;
+	height:63px;
+}
+div.box>ul.tabs>li>a{
+	display:inline-block;
+	color:#000000;
+	width:320px;
+	height:49px;
+	border-right:1px solid #fff;
+	vertical-align:middle;
+	font-size:14px;
+	line-height:49px;
+}
+div.box>ul.tabs>li>a:hover{
+	transition:all .5s linear;
+	color:#3989C7;
+}

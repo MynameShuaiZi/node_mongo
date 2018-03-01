@@ -1,0 +1,43 @@
+body{
+  color:#000000;
+  font:12px "simhei",Arial,Helvetica,sans-serif;
+  margin:0;
+  padding:0;
+  background-color:#FFFFFF;
+}
+div,p,h1,h2,h3,h4,h5,h6,ul,ol,dl,dd{
+  margin:0;
+  padding:0;
+  list-style:none;
+}
+img{
+  vertical-align:middle;
+}
+a{
+  text-decoration:none;
+  color:#000000;
+}
+a:hover{
+  text-decoration:none;
+}
+
+.clear:after{
+  content:"";
+  display:block;
+  clear:both;
+}
+.lf{ float:left; }
+.rt{ float:right; }
+div.main{
+  width:1583px;
+  margin:0 auto;
+}
+
+
+
+
+
+
+
+
+

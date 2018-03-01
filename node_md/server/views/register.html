@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登陆页面</title>
+    <link rel="stylesheet" href="css/base.css">
+		<link rel="stylesheet" href="css/register.css">
+</head>
+<body>
+<div class="main clear main1">
+	<!-- 加载页头 -->
+    <div id="header"></div>
+    <!-- 主体部分，登陆注册页面 -->
+    <img src="img/banner.jpg" alt="" id="bannerjpg">
+    <!-- 1.div 1182*600 相对定位 -->
+    <div id=container>
+       <!--  1.div 1180*560 -->
+        <div class=container-login>
+            <h3>会员登陆</h3>
+            <form action="" method="post" class="login-form">
+             <fieldset>
+                <legend>会员登陆</legend>
+               <p>
+                <label for="uname1">账&nbsp;&nbsp;号</label>
+                <input type="text" id="uname1" name="uname" placeholder="请输入邮箱/用户名/手机号/门店会员卡号" autofocus
+                       maxlength="12" minlength="3" required>
+								<span class="vali_info login-tip">
+									10个字符以内的字母、数字或下划线的组合
+								</span>
+
+               </p>
+               <p>
+                <label for="upwd1">密&nbsp;&nbsp;码</label>
+                <input type="text" id="upwd1" name="upwd" placeholder="请输入登陆密码" required>
+								<span class="vali_info">6位数字</span>
+               </p>
+               <hr>
+               <div class="chexkbox">
+                 <label for="check-box">
+                  <input type="checkbox" id="check-box" name="check-box">
+                  七天内自动登陆
+                  <a href="#">忘记密码</a>
+                 </label>
+                 <div class="login-btn">
+                 <input type="button" value="登&nbsp;&nbsp;&nbsp;录" name="login" class="btn-login">
+                 </div>
+               </div>
+             </fieldset>
+            </form>
+        </div>
+       <!--  2.div 411*560 绝对定位 -->
+        <div class=container-register>
+            <h3>我还不是乘龙会员</h3>
+            <div class="register-btn">
+                 <input type="button" value="注&nbsp;&nbsp;&nbsp;册" name="register-btn">
+            </div>
+            <div>
+                <p>
+                使用合作平台账号登录
+                </p>
+                <div class="register-pay">
+                 <input type="button" name="register-pay">
+                </div>
+            </div>
+
+        </div>
+    </div>
+	<!-- 加载页尾 -->
+	<div class="main main2" id="footer-1">
+	</div>
+</div>
+<script src="js/ajax.js"></script>
+<script src="js/jquery-3.2.1.js"></script>
+<script src="js/header.js"></script>
+<script src="js/footer.js"></script>
+<script src="js/login.js"></script>
+</body>
+</html>

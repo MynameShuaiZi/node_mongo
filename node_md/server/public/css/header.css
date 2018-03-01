@@ -1,0 +1,450 @@
+.header-container{
+	width:1583px;
+	height:80px;
+	margin:0 auto;
+	/*border-bottom: 3px solid #E11313;*/
+	position:relative;
+	z-index:1000;
+}
+/*********登录注册**********/
+.welcome{
+	width:220px;
+	position:absolute;
+	right:362px;
+	top:32px;
+	font-size:13px;
+	font-family: "微软雅黑", Arial;
+	display:none;
+}
+.welcome>span:first-child{
+	color:#1ABC9C;
+	font-size:16px;
+}
+.welcome>span:nth-child(2){
+	font-weight: bold;
+}
+
+
+
+.login-register{
+	float:right;
+	/*line-height: 80px;*/
+	margin-right:80px;
+
+}
+.login-register>div{
+	float:left;
+	width:50px;
+	height:30px;
+	cursor:pointer;
+	font-size:13px;
+	text-align: center;
+	line-height: 30px;
+	margin-top:30px;
+}
+.login-register>.login{
+	background-color:#169AF3;
+	color: #ffffff;
+	border:1px solid #158fe1;
+}
+.login-register>.register{
+	border: 1px solid #dbdbdb;
+	background-color: #fff;
+	margin-left: 10px;
+	color: #777;
+}
+/*******模态框***********/
+
+/***********1.LOGO************************/
+.header-top{
+	width:1583px;
+	height:80px;
+	margin:0 auto;
+}
+.logo{
+	margin-left:100px;
+	line-height:80px;
+	vertical-align: middle;
+	float:left;
+	z-index:1;
+}
+.logo img{
+	width:248px;
+	height:60px;
+}
+
+/***********2.下拉菜单*********************/
+.header-container>.list{
+	float:left;
+	width:120px;
+	height:80px;
+}
+.header-container>.list>a{
+	width:120px;
+	height:80px;
+	float:left;
+	font-size:20px;
+	text-align:center;
+	line-height:80px;
+	color: #FFFFFF;
+	font-weight: bold;
+	font-family: 'Microsoft YaHei';
+}
+.header-container>.list>.list-ul{
+	text-align:center;
+	font-size:12px;
+	font-weight: bold;
+	font-family: 'Microsoft YaHei';
+	/*display:none;*/
+	line-height:30px;
+	height:0px;
+	transition:height .3s linear;
+	overflow:hidden;
+	border:none;
+	position:relative;
+	top:80px;
+	background:#ECECEC;
+}
+.header-container>.list:hover>.list-ul{
+	/*display:block;*/
+	height:155px;
+	/*border:3px solid transparent;*/
+
+}
+.header-container .list-ul>li~li{
+	border-top:1px solid #DFDFDF;
+}
+.header-container>.list:nth-child(4):hover>.list-ul{
+	height:185px;
+}
+.header-container>.list:nth-child(5):hover>.list-ul{
+	height:90px;
+}
+.header-container>.list:nth-child(6):hover>.list-ul{
+	height:61px;
+}
+.header-container>.list:nth-child(7):hover>.list-ul{
+	height:61px;
+}
+.header-container>.list>.list-ul li:hover{
+	background-color:#3989C7;
+	color:#FFF;
+}
+
+/***********3.搜索框***********************/
+.search{
+	width:386px;
+	height:78px;
+	float:right;
+	position: relative;
+}
+
+.search>a{
+	line-height:78px;
+	position:relative;
+	left:-9px;
+}
+.search>input{
+	line-height:78px;
+	outline:none;
+	border-radius: 5px;
+	height:37px;
+	width:0px;
+	transition:width .5s linear;
+	font-family: 微软雅黑;
+	font-size: 16px;
+}
+.search:hover>input{
+	width:300px;
+}
+.searchTip{
+	width:60px;
+	height:40px;
+	background-color:#169AF3;
+	line-height: 40px;
+	text-align: center;
+	cursor: pointer;
+	font-family: 微软雅黑;
+	font-size:16px;
+	position: absolute;
+	top:21px;
+	left:-60px;
+	color: #ffffff;
+}
+.search-help{
+	width:300px;
+	position:absolute;
+top:59px;
+background-color:#ECECEC;
+	display: none;
+}
+.search-help>li{
+	width:300px;
+	height:35px;
+	font-size:16px;
+	font-family: "微软雅黑", Arial;
+	line-height: 35px;
+}
+.search-help>li~li{
+	border:1px solid #DFDFDF;
+}
+/**************4.登录注册*******************/
+
+
+
+/***************************/
+#header-top.fixed{
+	position:fixed;
+	top:0px; width:1583px;
+	background:#f5f5f5;
+	z-index:2;
+}
+/**************************/
+.header-container{
+	background-color:#1ABC9C;
+}
+/*.header-container .slide{*/
+	/*height:0px;*/
+	/*width:120px;*/
+	/*border:none;*/
+	/*background-color:#222222;*/
+	/*position:absolute;*/
+	/*z-index:-1;*/
+/*}*/
+/*.header-container>.list:hover>div,.header-container>.list:hover>a{*/
+	/*height:80px;*/
+	/*border:1px solid transparent;*/
+	/*color:#F9EAE9;*/
+/*}*/
+.listContainer{
+	perspective: 400px;
+	transform-style: preserve-3d;
+}
+.listContainer, .box{
+	width: 120px;
+	height: 80px;
+}
+.box{
+	backface-visibility: hidden;
+	transition: .5s;
+	transform-style: preserve-3d;
+	position: absolute;
+	text-align: center;
+}
+.box1{background-color: #1ABC9C;}
+.box2{background-color: #169AF3;}
+.box2{transform: rotateX(-180deg);}
+
+.listContainer:hover .box1{transform: rotateX(180deg);}
+.listContainer:hover .box2{transform: rotateX(0deg);}
+/*车型展厅*/
+.showCar {
+	display: block;
+	width: 960px;
+	height: 0px;
+	background-color:#FFFFFF;
+	border:none;
+	overflow:hidden;
+	transition:height .5s ease;
+	position:relative;
+	top:80px;
+	right:120px;
+	box-sizing: border-box;
+}
+.list:hover>.showCar{
+	height:536px;
+	border-left:1px solid #DFDFDF;
+}
+/*.showCar ul{*/
+	/*width:110px;*/
+	/*height:150px;*/
+	/*border-bottom:1px solid #DFDFDF;*/
+/*}*/
+.showCar ul>li>a{
+	display:inline-block;
+	width:213px;
+	height:133px;
+}
+.showCar ul>li:first-child>a{
+	display:block;
+	width:112px;
+	height:133px;
+	line-height: 133px;
+	text-align: center;
+	color:#000000;
+	font-family: 微软雅黑;
+	font-weight: bold;
+	box-sizing: border-box;
+}
+.showCar ul>li:first-child{
+	width:110px;
+	height:133px;
+	box-sizing: border-box;
+}
+.showCar ul>li{
+	float:left;
+	width:212px;
+	height:133px;
+	text-align: center;
+}
+.showCar ul>li:hover{
+	background-color:#D5DADE;
+}
+.showCar ul .img_zc{
+	display:inline-block;
+	width:112px;
+	height:84px;
+	background:no-repeat center center;background-size:100px 75px;
+}
+.showCar ul .img_zd{
+	display:inline-block;
+	width:112px;
+	height:84px;
+	background:no-repeat center center;background-size:110px 82px;
+	display:none;
+}
+.showCar ul a:hover>.img_zc{
+	display:none;
+}
+.showCar ul a:hover>.img_zd{
+	display:inline-block;
+}
+.showCar ul h5>span{
+	color:#3989C7;
+}
+.showCar ul h5{
+	text-align: left;
+	padding-left:10px;
+	font-size: 12px;
+	font-family: "微软雅黑", Arial;
+	color:#3F3F3F;
+	font-weight:bold;
+}
+.showCar ul p strong{
+	color:#3989C7;
+}
+.showCar ul p>span{
+	font-size:14px;
+	font-family: "微软雅黑", Arial;
+	color:#706E6E;
+}
+.showCar ul p{
+	text-align: left;
+	padding-left:21px;
+}
+.showCar ul:hover>li:first-child{
+	background-color:#3989C7;
+	color:#FFFFFF;
+}
+.showCar>li{
+	width:960px;
+	height:133px;
+	box-sizing: border-box;
+	display:inline-block;
+	border-bottom:1px solid #DFDFDF;
+}
+
+/*二次下拉列表详情*/
+.dropDetail{
+	width:960px;
+	height:0px;
+	background:url("../img/menu_product_content.jpg") no-repeat;
+	position:absolute;
+	right:0px;
+	/*z-index: 1000000000000;*/
+
+	transition: height .3s linear;
+	overflow:hidden;
+	border:none;
+}
+.showCar ul li:hover>div.dropDetail{
+	height:240px;
+}
+.dropDetail h6{
+	font-size: 2.5em;
+	position: absolute;
+	left: 112px;
+	top: 10%;
+	vertical-align: baseline;
+	border-bottom: 2px solid #3989C7;
+	font-weight: lighter;
+	color: #333;
+	line-height: 1.5em;
+}
+.dropDetail p{
+	position: absolute;
+	left: 112px;
+	top: 10%;
+	margin-top: 3.5em;
+	vertical-align: baseline;
+	color: #666;
+	font-family: 微软雅黑;
+	font-size: 12px;
+}
+.dropDetail p>span:first-child{
+	font-size: 2.5em;
+	vertical-align: baseline;
+	line-height: 1.5em;
+	position: relative;
+	top: 0.1em;
+	color: #3989C7;
+}
+.dropDetail p>span:nth-child(2){
+	font-size: 0.6em;
+	position: relative;
+	top: -0.1em;
+	vertical-align: baseline;
+	color: #3989C7;
+}
+.dropDetail p>span:last-child{
+	color: #3989C7;
+}
+.dropDetail a:last-child{
+	font-size: 14px;
+	color: #3989C7;
+	position: absolute;
+	top: auto;
+	bottom: 10%;
+	left: 222px;
+}
+.dropDetail a:first-child{
+	position: absolute;
+	top: auto;
+	bottom: 10%;
+	left: 0px;
+	width: 96px;
+}
+.dropDetail a:nth-child(2){
+	position: absolute;
+	top: auto;
+	bottom: 10%;
+	width: 102px;
+	left: 108px;
+}
+.dropDetail>div:last-child{
+	position: absolute;
+	right: 6%;
+	padding: 0 0 24%;
+	top: 0;
+	margin-top: 0;
+	background-repeat:no-repeat;
+	background-position: 0 0;
+	background-size: 100%;
+	width:307.19px;
+	height:230.39px;
+}
+
+
+
+
+.navHover{
+	background-color:#169AF3;
+}
+
+
+
+
+
+
+
+
